@@ -11,10 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 public class PostDto {
-    private String title;
-    private LocalDateTime dateTime;
-    private String context;
-
-    public PostDto(Post one) {
-    }
+    private String titleDto;
+    private LocalDateTime dateTimeDto;
+    private String contextDto;
 }

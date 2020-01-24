@@ -27,4 +27,5 @@ public class Post {
         this.dateTime = dateTime;
         this.context = context;
     }
+
 }

@@ -1,6 +1,7 @@
 package com.shorobura.service.impl;
 
 import com.shorobura.dto.PostDto;
+import com.shorobura.mapper.PostMapper;
 import com.shorobura.model.Post;
 import com.shorobura.repository.PostRepository;
 import com.shorobura.service.PostService;
@@ -17,13 +18,13 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostDto findOne(int id) {
-        return new PostDto(postRepository.getOne(id));
+        return PostMapper.INSTANCE.postToPostDto(postRepository.getOne(id));
     }
 
     @Override
     public List<PostDto> findAll() {
         return postRepository.findAll().stream()
-                .map(PostDto::new)
+                .map(PostMapper.INSTANCE::postToPostDto)
                 .collect(Collectors.toList());
     }
 

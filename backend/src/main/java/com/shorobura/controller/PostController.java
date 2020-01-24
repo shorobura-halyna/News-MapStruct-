@@ -1,6 +1,7 @@
 package com.shorobura.controller;
 
 import com.shorobura.dto.PostDto;
+import com.shorobura.mapper.PostMapper;
 import com.shorobura.model.Post;
 import com.shorobura.service.PostService;
 import lombok.RequiredArgsConstructor;
@@ -17,15 +18,13 @@ public class PostController {
     private final PostService postService;
 
     @PostMapping
-    public HttpStatus save(@RequestParam String title,
-                           @RequestParam LocalDateTime dateTime,
-                           @RequestParam String context){
-        postService.save(new Post(title, dateTime, context));
+    public HttpStatus save(@RequestBody PostDto postDto){
+        postService.save(PostMapper.INSTANCE.postDtoToPost(postDto));
         return HttpStatus.OK;
     }
 
     @GetMapping
-    public PostDto findOne(@PathVariable int id){
+    public PostDto findOne(@RequestParam int id){
         return postService.findOne(id);
     }
 
@@ -35,7 +34,7 @@ public class PostController {
     }
 
     @DeleteMapping
-    public HttpStatus delete(@PathVariable int id){
+    public HttpStatus delete(@RequestParam int id){
         postService.delete(id);
         return HttpStatus.OK;
     }
