@@ -5,8 +5,6 @@
 
 ### https://mapstruct.org/
 
-Set up:
-For Maven based projects add the following to your POM file in order to use MapStruct:
 
 <h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="MapStruct_0"></a>MapStruct</h1>
 <p class="has-line-data" data-line-start="1" data-line-end="3">Set up:<br>
