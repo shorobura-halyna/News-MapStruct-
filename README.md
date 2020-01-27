@@ -34,7 +34,7 @@ Set up:
         </plugin>
     </plugins>
 </build>
-
+###
 
 public class Car {
  
@@ -45,7 +45,7 @@ public class Car {
     //constructor, getters, setters etc.
 }
 
-blic class CarDto {
+public class CarDto {
  
     private String make;
     private int seatCount;
