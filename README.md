@@ -1,5 +1,10 @@
 
 # MapStruct
+
+### https://mapstruct.org/documentation/stable/reference/html/
+
+### https://mapstruct.org/
+
 Set up:
 For Maven based projects add the following to your POM file in order to use MapStruct:
 
