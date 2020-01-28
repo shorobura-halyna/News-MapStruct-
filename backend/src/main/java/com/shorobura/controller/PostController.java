@@ -2,13 +2,11 @@ package com.shorobura.controller;
 
 import com.shorobura.dto.PostDto;
 import com.shorobura.mapper.PostMapper;
-import com.shorobura.model.Post;
 import com.shorobura.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
