@@ -1,0 +1,25 @@
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>post</th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let post of posts">
+      <td>{{ post.id}}</td>
+      <td>{{ post.title}}</td>
+      <td>{{ post.dateTime}}</td>
+      <td>{{ post.context}}</td>
+      <td>
+        <button class="btn btn-primary">edit</button>
+      </td>
+      <td>
+        <button class="btn btn-primary">delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,6 +1,5 @@
 package com.shorobura.dto;
 
-import com.shorobura.model.Post;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

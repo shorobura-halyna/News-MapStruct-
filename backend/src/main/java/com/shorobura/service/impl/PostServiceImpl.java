@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 public class PostServiceImpl implements PostService {
-    private final PostRepository postRepository;
+    private final PostRepository  postRepository;
 
     @Override
     public PostDto findOne(int id) {

@@ -22,7 +22,8 @@ public class Post {
     private LocalDateTime dateTime;
     private String context;
 
-    public Post(String title, LocalDateTime dateTime, String context) {
+    public Post(int id, String title, LocalDateTime dateTime, String context) {
+        this.id = id;
         this.title = title;
         this.dateTime = dateTime;
         this.context = context;
