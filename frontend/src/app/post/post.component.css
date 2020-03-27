@@ -1,0 +1,12 @@
+.post {
+  padding: .5rem 1rem;
+  border: 1px dashed #c4ccbb;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  margin-bottom: .5rem;
+}
+
+

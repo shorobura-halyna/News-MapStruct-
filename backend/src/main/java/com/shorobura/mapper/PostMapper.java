@@ -11,13 +11,13 @@ public interface PostMapper {
 
     PostMapper INSTANCE = Mappers.getMapper(PostMapper.class) ;
 
-    @Mapping(source = "title", target = "titleDto")
-    @Mapping(source = "dateTime", target = "dateTimeDto")
-    @Mapping(source = "context", target = "contextDto")
+    @Mapping(source = "title", target = "title")
+    @Mapping(source = "dateTime", target = "dateTime")
+    @Mapping(source = "context", target = "context")
     PostDto postToPostDto (Post post);
 
-    @Mapping(source = "titleDto", target = "title")
-    @Mapping(source = "dateTimeDto", target = "dateTime")
-    @Mapping(source = "contextDto", target = "context")
+    @Mapping(source = "title", target = "title")
+    @Mapping(source = "dateTime", target = "dateTime")
+    @Mapping(source = "context", target = "context")
     Post postDtoToPost(PostDto postDto);
 }
