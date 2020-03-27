@@ -70,3 +70,6 @@ For Maven based projects add the following to your POM file in order to use MapS
         
     @Mapping(source = "numberOfSeats", target = "seatCount")
     CarDto carToCarDto(Car car); 
+
+
+do some changes for test
